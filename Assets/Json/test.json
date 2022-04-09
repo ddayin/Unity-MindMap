@@ -1,0 +1,178 @@
+{
+    "product": "AI REDPEN 개념정리",
+    "version": 1.1,
+    "releaseDate": "2021-01-21T00:00:00.000Z",
+    "demo": true,
+    "node": {
+      "depth": 0,
+      "name": "Animal",
+      "imageFileName": "animal.png",
+      "description": "Animal blah blah",
+      "childNodes": [
+        {
+          "depth": 1,
+          "name": "Vertebrates",
+          "imageFileName": "vertebrates.png",
+          "description": "Vertebrates blah blah",
+          "childNodes": [
+            {
+              "depth": 2,
+              "name": "Birds",
+              "imageFileName": "Birds.png",
+              "description": "Birds blah blah"
+            },
+            {
+              "depth": 2,
+              "name": "Fish",
+              "imageFileName": "Fish.png",
+              "description": "Fish blah blah"
+            },
+            {
+              "depth": 2,
+              "name": "Mammals",
+              "imageFileName": "Mammals.png",
+              "description": "Mammals blah blah"
+            },
+            {
+              "depth": 2,
+              "name": "Reptiles",
+              "imageFileName": "Reptiles.png",
+              "description": "Reptiles blah blah"
+            },
+            {
+              "depth": 2,
+              "name": "Amphibians",
+              "imageFileName": "Amphibians.png",
+              "description": "Amphibians blah blah"
+            }
+          ]
+        },
+        {
+          "depth": 1,
+          "name": "Invertebrates",
+          "imageFileName": "Invertebrates.png",
+          "description": "Invertebrates blah blah",
+          "childNodes": [
+            {
+              "depth": 2,
+              "name": "Protozoa",
+              "imageFileName": "Protozoa.png",
+              "description": "Protozoa blah blah"
+            },
+            {
+              "depth": 2,
+              "name": "Coelenterates",
+              "imageFileName": "Coelenterates.png",
+              "description": "Coelenterates blah blah"
+            },
+            {
+              "depth": 2,
+              "name": "Flatworms",
+              "imageFileName": "Flatworms.png",
+              "description": "Flatworms blah blah"
+            },
+            {
+              "depth": 2,
+              "name": "Anthropods",
+              "imageFileName": "Anthropods.png",
+              "description": "Anthropods blah blah",
+              "childNodes": [
+                {
+                  "depth": 3,
+                  "name": "Myriapods",
+                  "imageFileName": "Myriapods.png",
+                  "description": "Myriapods blah blah"
+                },
+                {
+                  "depth": 3,
+                  "name": "Insects",
+                  "imageFileName": "Insects.png",
+                  "description": "Insects blah blah",
+                  "childNodes": [
+                    {
+                      "depth": 4,
+                      "name": "Bee",
+                      "imageFileName": "Bee.png",
+                      "description": "Bee blah blah"
+                    },
+                    {
+                      "depth": 4,
+                      "name": "Ant",
+                      "imageFileName": "Ant.png",
+                      "description": "Ant blah blah"
+                    },
+                    {
+                      "depth": 4,
+                      "name": "Butterfly",
+                      "imageFileName": "Butterfly.png",
+                      "description": "Butterfly blah blah"
+                    },
+                    {
+                      "depth": 4,
+                      "name": "Ladybird Beetle",
+                      "imageFileName": "LadybirdBeetle.png",
+                      "description": "LadybirdBeetle blah blah"
+                    },
+                    {
+                      "depth": 4,
+                      "name": "Locust",
+                      "imageFileName": "Locust.png",
+                      "description": "Locust blah blah"
+                    },
+                    {
+                      "depth": 4,
+                      "name": "Mosquito",
+                      "imageFileName": "Mosquito.png",
+                      "description": "Mosquito blah blah"
+                    },
+                    {
+                      "depth": 4,
+                      "name": "Wasp",
+                      "imageFileName": "Wasp.png",
+                      "description": "Wasp blah blah"
+                    },
+                    {
+                      "depth": 4,
+                      "name": "Housefly",
+                      "imageFileName": "Housefly.png",
+                      "description": "Wasp blah blah"
+                    }
+                  ]
+                },
+                {
+                  "depth": 3,
+                  "name": "Arachnids",
+                  "imageFileName": "Arachnids.png",
+                  "description": "Arachnids blah blah"
+                },
+                {
+                  "depth": 3,
+                  "name": "Crustaceans",
+                  "imageFileName": "Crustaceans.png",
+                  "description": "Crustaceans blah blah"
+                }
+              ]
+            },
+            {
+              "depth": 2,
+              "name": "Annelid worms",
+              "imageFileName": "AnnelidWorms.png",
+              "description": "Annelid worms blah blah"
+            },
+            {
+              "depth": 2,
+              "name": "Molluscs",
+              "imageFileName": "Molluscs.png",
+              "description": "Molluscs blah blah"
+            },
+            {
+              "depth": 2,
+              "name": "Echinoderms",
+              "imageFileName": "Echinoderms.png",
+              "description": "Echinoderms blah blah"
+            }
+          ]
+        }
+      ]
+    }
+  }
