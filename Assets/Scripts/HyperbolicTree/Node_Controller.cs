@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 namespace HyperbolicTree
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class Node_Controller : MonoBehaviour
     {
         public class Connection
