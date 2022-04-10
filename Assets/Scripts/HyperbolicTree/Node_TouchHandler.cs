@@ -2,13 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace HyperbolicTree
-{
-    public class Node_TouchHandler : MonoBehaviour
-    {
-        private void Awake()
-        {
-            
-        }
+namespace HyperbolicTree {
+  public class Node_TouchHandler : MonoBehaviour {
+    private void Awake() {
     }
+  }
 }
