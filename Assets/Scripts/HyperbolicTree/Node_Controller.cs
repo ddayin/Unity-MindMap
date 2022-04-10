@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 namespace HyperbolicTree
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class Node_Controller : MonoBehaviour
     {
         public class Connection
@@ -20,18 +23,21 @@ namespace HyperbolicTree
         private Transform parentLine;
 
         //public List<Node_Model> nodeChildren = new List<Node_Model>();
-        public List<Node_Controller> nodeChildren = new List<Node_Controller>();
+        public Node_Controller[] nodeChildren = null;
         public List<Line> lineChildren = new List<Line>();
         public List<Vector2> childLinePoints = new List<Vector2>();
         public List<Connection> connectionsList = new List<Connection>();
 
-        private void Awake()
-        {
+        private void Awake() {
             view = GetComponent<Node_View>();
             parentNode = transform.Find("NodeChild");
             parentLine = transform.Find("ParentLine");
 
             //CalculatePoints();
+            nodeChildren = new Node_Controller[1024];
+            for (int i = 0; i < 1024; i++) {
+                nodeChildren[i] = null;
+            }
         }
 
         public void Initialize(Node_Model _model)
@@ -118,7 +124,7 @@ namespace HyperbolicTree
                         Debug.Log("자식노드를 생성할 영역을 찾음 name = " + model.childNodes[n].name + " point = " + point);
 
                         Node_Controller node = NodeFactory.instance.Create(model.childNodes[n], parentNode, point);
-                        nodeChildren.Add(node);
+                        nodeChildren[n] = node;
 
                         Line line = LineFactory.instance.Create(parentLine, point);
                         lineChildren.Add(line);
