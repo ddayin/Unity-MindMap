@@ -35,8 +35,12 @@ namespace HyperbolicTree
             node_2.imageFileName = "육식동물";
             node_2.description = "육식동물 blah blah";
 
-            _root.childNodes.Add(node_1);
-            _root.childNodes.Add(node_2);
+            _root.childNodes = new Node_Model[2];
+            for (int i = 0; i < 2; i++) {
+                _root.childNodes[i] = null;
+            }
+            _root.childNodes[0] = node_1;
+            _root.childNodes[1] = node_2;
 
             Node_Model node_1_0 = new Node_Model();
             node_1_0.id = "1_0";
@@ -83,11 +87,15 @@ namespace HyperbolicTree
             node_1_4.imageFileName = "양서류";
             node_1_4.description = "양서류 blah blah";
 
-            node_1.childNodes.Add(node_1_0);
-            node_1.childNodes.Add(node_1_1);
-            node_1.childNodes.Add(node_1_2);
-            node_1.childNodes.Add(node_1_3);
-            node_1.childNodes.Add(node_1_4);
+            node_1.childNodes = new Node_Model[5];
+            for (int i = 0; i < 5; i++) {
+                node_1.childNodes[i] = null;
+            }
+            node_1.childNodes[0] = node_1_0;
+            node_1.childNodes[1] = node_1_1;
+            node_1.childNodes[2] = node_1_2;
+            node_1.childNodes[3] = node_1_3;
+            node_1.childNodes[4] = node_1_4;
 
             Node_Model node_1_2_0 = new Node_Model();
             node_1_2_0.id = "1_2_0";
@@ -143,12 +151,16 @@ namespace HyperbolicTree
             node_1_2_5.imageFileName = "유대류";
             node_1_2_5.description = "유대류 blah blah";
 
-            node_1_2.childNodes.Add(node_1_2_0);
-            node_1_2.childNodes.Add(node_1_2_1);
-            node_1_2.childNodes.Add(node_1_2_2);
-            node_1_2.childNodes.Add(node_1_2_3);
-            node_1_2.childNodes.Add(node_1_2_4);
-            node_1_2.childNodes.Add(node_1_2_5);
+            node_1_2.childNodes = new Node_Model[6];
+            for (int i = 0; i < 6; i++) {
+                node_1_2.childNodes[i] = null;
+            }
+            node_1_2.childNodes[0] = node_1_2_0;
+            node_1_2.childNodes[1] = node_1_2_1;
+            node_1_2.childNodes[2] = node_1_2_2;
+            node_1_2.childNodes[3] = node_1_2_3;
+            node_1_2.childNodes[4] = node_1_2_4;
+            node_1_2.childNodes[5] = node_1_2_5;
 
             Node_Model node_1_2_4_0 = new Node_Model();
             node_1_2_4_0.id = "1_2_4_0";
@@ -222,19 +234,23 @@ namespace HyperbolicTree
             node_1_2_4_7.imageFileName = "호저";
             node_1_2_4_7.description = "호저 blah blah";
 
-            node_1_2_4.childNodes.Add(node_1_2_4_0);
-            node_1_2_4.childNodes.Add(node_1_2_4_1);
-            node_1_2_4.childNodes.Add(node_1_2_4_2);
-            node_1_2_4.childNodes.Add(node_1_2_4_3);
-            node_1_2_4.childNodes.Add(node_1_2_4_4);
-            node_1_2_4.childNodes.Add(node_1_2_4_5);
-            node_1_2_4.childNodes.Add(node_1_2_4_6);
-            node_1_2_4.childNodes.Add(node_1_2_4_7);
+            node_1_2_4.childNodes = new Node_Model[8];
+            for (int i = 0; i < 8; i++) {
+                node_1_2_4.childNodes[i] = null;
+            }
+            node_1_2_4.childNodes[0] = node_1_2_4_0;
+            node_1_2_4.childNodes[1] = node_1_2_4_1;
+            node_1_2_4.childNodes[2] = node_1_2_4_2;
+            node_1_2_4.childNodes[3] = node_1_2_4_3;
+            node_1_2_4.childNodes[4] = node_1_2_4_4;
+            node_1_2_4.childNodes[5] = node_1_2_4_5;
+            node_1_2_4.childNodes[6] = node_1_2_4_6;
+            node_1_2_4.childNodes[7] = node_1_2_4_7;
 
             return _root;
         }
 
-        public Node_Model SearchNode(List<Node_Model> nodes, string id)
+        public Node_Model SearchNode(Node_Model[] nodes, string id)
         {
             foreach (Node_Model model in nodes)
             {

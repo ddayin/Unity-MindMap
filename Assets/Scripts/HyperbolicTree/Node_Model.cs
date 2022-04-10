@@ -11,7 +11,6 @@ namespace HyperbolicTree
         ImageAndText
     }
 
-    [System.Serializable]
     public class Node_Model
     {
         public string id;
@@ -22,6 +21,6 @@ namespace HyperbolicTree
         public string imageFileName;
         public string description;
 
-        public List<Node_Model> childNodes = new List<Node_Model>();
+        public Node_Model[] childNodes = null;
     }
 }

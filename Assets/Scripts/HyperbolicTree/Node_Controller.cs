@@ -100,7 +100,10 @@ namespace HyperbolicTree
 
         private void CheckAndCreateChildren()
         {
-            for (int n = 0; n < model.childNodes.Count; n++)
+            if (model.childNodes == null) {
+                return;
+            }
+            for (int n = 0; n < model.childNodes.Length; n++)
             {
                 bool isLoop = true;
                 do
@@ -108,7 +111,9 @@ namespace HyperbolicTree
                     // 360도 랜덤한 각도로 360번 빈 영역이 있는지 검사한다.
                     float randomAngle = (float)UnityEngine.Random.Range(0, 360);
                     bool hasChild = false;
-                    if (model.childNodes[n].childNodes.Count > 0)
+                    if (model.childNodes[n].childNodes == null) {
+                        hasChild = false;
+                    } else if (model.childNodes[n].childNodes.Length > 0)
                     {
                         hasChild = true;
                     }
